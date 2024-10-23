@@ -288,6 +288,7 @@ button{
   height: 100%;
   background-color: rgba(0,0,0,0.7);
   z-index: 1000;
+  box-sizing: border-box;
 }
 .modal-content {
   position: absolute;
@@ -299,6 +300,7 @@ button{
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-sizing: border-box;
 }
 .modal:target {
 display: block;
@@ -313,8 +315,9 @@ display: block;
 }
 .form-group {
   margin-bottom: 15px;
-  margin-right:5%;
+
 }
+
 .form-group label {
   display: block;
   margin-bottom: 5px;
@@ -327,10 +330,14 @@ display: block;
   border: 1px solid #4a69bd;
   background: rgba(255,255,255,0.1);
   color: #fff;
+  box-sizing: border-box;
+  font-size:inherit;
 }
 .form-group input::placeholder {
   color: rgba(255,255,255,0.5);
 }
+
+
 .social-login {
   margin-top: 20px;
   text-align: center;
