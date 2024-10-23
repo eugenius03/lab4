@@ -150,7 +150,7 @@ h1 {
   font-weight: bold;
 }
 
-.signupbutton {
+.signinbutton {
   background-color: purple;
   /* margin-left: 5px; */
   border-radius: 10px;
@@ -160,12 +160,12 @@ h1 {
   white-space: nowrap
 }
 
-.signupbutton:hover {
+.signinbutton:hover {
   opacity: 0.7;
 
 }
 
-.host-signup {
+.host-signin {
 
   color: white;
   font-weight: bold;
@@ -202,62 +202,6 @@ input:not(:placeholder-shown):not(:focus):invalid {
 
 input:valid {
   border: 2px solid black;
-}
-
-.auth-form {
-  background: rgba(255,255,255,0.1);
-  border-radius: 10px;
-  padding: 30px;
-  width: auto;
-  max-width: 300px;
-}
-
-.auth-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top:2rem;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.auth-input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(255,255,255,0.8);
-  color: #333;
-}
-
-.auth-button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  font-size: 1em;
-  background-color: #4a69bd;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.auth-button:hover {
-  background-color: #6a89cc;
-}
-
-.toggle-form {
-  margin-top: 20px;
-  font-size: 0.9em;
-}
-.toggle-form a {
-  color: #5cc9f5;
-  text-decoration: none;
-}
-.toggle-form a:hover {
-  text-decoration: underline;
 }
 
 .feedback-section {
@@ -332,6 +276,81 @@ button{
 
 .card-body{
   color:#fff;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #1a1a2e, #16213e);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.modal:target {
+display: block;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.form-group {
+  margin-bottom: 15px;
+  margin-right:5%;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #4a69bd;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+.form-group input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+.social-btn {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.google-btn {
+  background-color: #DB4437;
+  color: white;
+}
+.discord-btn {
+  background-color: #4267B2;
+  color: white;
 }
 
 
